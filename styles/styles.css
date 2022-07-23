@@ -60,26 +60,52 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: lightgreen;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: lightcoral;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: lightsalmon;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+}
+
+.active {
+  display: block;
+  -webkit-animation: scaleAnim 1s ease;
+          animation: scaleAnim 1s ease;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controls {
